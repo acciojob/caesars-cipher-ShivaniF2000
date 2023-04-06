@@ -1,6 +1,6 @@
 // Your Script here.
 
-const lookup = {
+var lookup = {
   'A': 'N','B': 'O','C': 'P','D': 'Q',
   'E': 'R','F': 'S','G': 'T','H': 'U',
   'I': 'V','J': 'W','K': 'X','L': 'Y',
@@ -18,8 +18,8 @@ for(let i=0;i<words.length;i++){
 	const word=words[i];
 	let decoded_word = ''
 	for(let j=0; j<word.length;j++){
-		const char=word.charAt(j)
-		const decoded_chat=lookup[char];
+		var char = word.charAt(j)
+		var decoded_chat=lookup[char];
 		decoded_word += decoded_char
 	}
 	decodedArr.push(decoded_word)
